@@ -250,5 +250,3 @@ Special cases of note are:
 $\text{Quarterly Compounding}: V(T)=(1+\frac{r}{4}^{4T})X$  
 $\text{Monthly Compounding}: V(T)=(1+\frac{r}{12}^{12T})X$    
 </p>
-
-# Continuous Compounding
