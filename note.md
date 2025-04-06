@@ -128,7 +128,7 @@ $\text{Final Investment Value}=(1+0.04 \times \frac{77}{365}) \times \$50,000=\$
 
 # Compound Interest
 - With simple interest, the interest rate is only ever applied to the original principal, interest is never paid on accumulated interest
-- This limites the growth ptotential under simple interest
+- This limits the growth potential under simple interest
 - Compounding interest is the act of adding interest to the principal so that interest is now charged on interest previously paid
 - The most basic case of compounding is annual compounding
 - **Annually compounded interest** is interest that is added to the principal once per year so that interest in the next year is levied on the interest charged so far as well as the principal
@@ -246,7 +246,64 @@ $V(T)=(1+\frac{r}{k})^{kT}X$
 </p>
 
 Special cases of note are:
+
 **<p align="center">**
 $\text{Quarterly Compounding}: V(T)=(1+\frac{r}{4}^{4T})X$  
 $\text{Monthly Compounding}: V(T)=(1+\frac{r}{12}^{12T})X$    
 </p>
+
+# Continuous Compounding
+- Continuous compounding corresponds to instantaneous compounding of all interest is paid on it
+- Mathematically it is the limit of periodic compounding as the compounding frequency goes to infinity
+- There are significant mathematical advantages to working with continuously compound rates, and it is often preferred representation of interest rates
+
+From the last lectute, we have the formula for the $T$ year investment value under a $k$ times per year compounded rate $r$:
+
+**<p align="center">**
+$V(T)=(1+\frac{r}{k})^{kT}X$  
+</p>
+
+Recall the limit from calculus:
+**<p align="center">**
+$\lim_{k \to \infty}(1+\frac{x}{k})^k=e^x$  
+</p>
+
+Using this formula, take the limit as $k$ goes to $\infty$ in the expression for $V(T)$:
+**<p align="center">**
+$\lim_{k \to \infty}(1+\frac{r}{k})^{kT}=e^{rT}$  
+</p>
+
+Thus with continuous compounding, the future value of an investment of $X$ in $T$ years is
+**<p align="center">**
+$V(T)=e^{rT}X$  
+</p>
+
+**Example**: Suppose the contnuously compounded interest rate is $r=5\%$. Calculate the value of a $20,000 investment at this rate in 6 years. What continuously compounded rate would result in an investment worth $30,000 in 10 years
+
+The future value of the investment is
+**<p align="center">**
+$V=e^{(0.05)(6)}(20,000)=\$26,997$  
+</p>
+
+To grow the investment to $30,000 in 10 years requires
+**<p align="center">**
+$e^{r \times 10} \times \$20,000=\$30,000$  
+$r=0.04054=4.05\%$
+</p>
+
+**Rate Conversions**: As fro periodic compounding, conversions are possible between continuously compounded rates and periodically compounded rates
+
+If $r$ is a continuously compounded rate and $r_k$ is the equuvalent periodically compounded rate with compounding frequency $k$, then
+
+**<p align="center">**
+$r=klog(1+\frac{r_k}{k})$  
+</p>
+
+gives the continuously compounded rate and 
+
+**<p align="center">**
+$r_k=k(e^{r/k}-1)$  
+</p>
+
+Gives the periodic rate
+Proofs and applications are in the problems
