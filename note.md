@@ -307,3 +307,300 @@ $r_k=k(e^{r/k}-1)$
 
 Gives the periodic rate
 Proofs and applications are in the problems
+
+# Investment Return Measures
+ - The notion of investment return or return on investment (ROI) refers to some measure of the profit or loss realized on  an investment
+ - Let $V(t)$ be the value of some investment at time $t$. In particular, $V(0)$ is then the initial investment commited by an investor
+ - In this lecture, we will assume that investments do not pay any income or dividends, and be concerned solely by capital gains or losses
+ - We will consider returs over a given investmetn horizon, denoted by $T$
+- We can consider **absolute** and **relative** measures of return on investments
+- An absoulte measure of return would usually be expressed as a dollar value, sometimes going by the name dollar return
+- The most baic example of an absolute return measure is the profit and loss **(P & L)**:
+
+**<p align="center">**
+$\text{P\&L}=V(T)-V(0)$  
+</p>
+
+- Most of the most useful return measures are relative return measures
+- On simple relative return measure is the **gross return**:
+
+**<p align="center">**
+$\text{gross return}=\frac{V(T)}{V(0)}$  
+</p>
+
+- Perhaps the most basic return measure is the quantity $R$ defined by the equation
+
+**<p align="center">**
+$1+R=\frac{V(T)}{V(0)}$  
+</p>
+
+- This return measure can be called a relative return, a percentage return, or a rate of return
+- In the course $R$ will be called the **return**, or the **cumulative return**
+- **Remark**: We will sometimes use the terminology rate of return, but it will mean something somewhat different
+
+With return so defined,
+
+**<p align="center">**
+$1+\text{return}=\frac{V(T)}{V(0)}$  
+</p>
+
+We get an explicit expression by solving the equation:
+
+**<p align="center">**
+$\text{return}=\frac{V(T)}{V(0)}-1=\frac{V(T)-V(0)}{V(0)}=\frac{\text{P\&L}}{V(0)}$  
+</p>
+
+Thus the return is the profit or loss of the investment expressed as a fraction or percentage (if we multiply by 100) of the original investment
+
+As the name suggests, this quantity is the most basic of all return measures
+**Remark**: Note that return and gross return are rekated hrough the identity:
+
+**<p align="center">**
+$\text{return}=\text{gross return} - 1$  
+</p>
+
+THus the gross return conatins exactly the same information as the return
+
+**Example**: Suppose you invest $12,000 at an annually compounded interest rate of 9%. Using an investment horizon of 3 years, calculate your R&L, gross return, and return
+
+
+We have $V(0)=$12,000$ and:
+
+**<p align="center">**
+$V(3)=\$12,000(1+0.09^3)=\$15,540$  
+</p>
+
+Thus:
+
+**<p align="center">**
+$\text{P\&L}=\$15,540-\$12,000=\$3540$  
+$\text{gross return}=\frac{\$15,540}{\$12,000}=1.295$  
+$\text{return}=\frac{\text{P\&L}}{12,000}=0.295=29.5\%$
+</p>
+
+- **Annualized Returns**: Annualized returns are meaures of return per unit time
+
+Mathematically, they are averages of the returns realized over successive intervals of time over the duration of the investment
+
+We continue to denote our investment horizon by $T$. We define the **annualized return** by $\rho$ such that
+
+**<p align="center">**
+$(1+\rho)^T=\frac{V(T)}{V(0)}$
+</p>
+
+which we may solve for $\rho$:
+
+**<p align="center">**
+$\rho=[\frac{V(T)}{V(0)}]^{\frac{1}{T}}-1$
+</p>
+
+We will sometimes refer to $\rho$ ad the rate of return
+
+**Exmaple**: Calculate the annualized return in the previous example.
+
+The annualized return is
+
+**<p align="center">**
+$\rho=(\frac{15,540}{12,000})^{\frac{1}{3}}-1=0.09=9\%$
+</p>
+
+Is this a coincidence?
+
+**Interest Rates and Returns**: Of course, the answer to that question is no
+
+Suppose we invest an amount of money $X$ at an annually compounded interest rate $r$ for $K$ years
+
+Tha value of the investment at the end of the investment period is
+
+**<p align="center">**
+$V(K)=(1+r)^KX$
+</p>
+
+and the annualized return is 
+
+
+**<p align="center">**
+$\text{annualized return}=[\frac{(1+r)^KX}{X}]^{\frac{1}{K}}-1=1+r-1=r$
+</p>
+
+The relationship between interest rates, compounding conventions, and returns is explored further in problems
+
+# Coupon Bonds
+- This course is concerned primarily with debt securities, and the dominant  form of debt security traded on markets today is the bond
+- A bond or debt security is a contract that a borrowing entity offers to enter into with potential bond buyers
+- The borrower is said to *issue* the bond and is thus referred to as the **bond issuer**. The counterparty is called the **bond holder**
+- The bond holder pays the bond issuer to enter into the contract, and in return the bond issuer is obligated to make preschduled payments to the bond holder
+- What distinguishes this form  a mere loan is that bonds are tradeable instruments: The bond holder can sell the right to receive the payments to someone else  
+
+As a financial instrument he most general form of a bond can be described and modelled in the following way
+
+There are preset times
+**<p align="center">**
+$t_1,t_2,...,t_N$
+</p>
+
+and corresponding to these times preset cash flows
+**<p align="center">**
+$c_1,c_2,...,c_N$
+</p>
+
+which are paid by the bond issuer to the bond holder
+
+From the bond holder's (bond investor's) point of view, a bond is the right to receive this stream of cash flows
+
+The payments of a bond with cash flows $c_1=c_2=\$10$, $c_3=c_4=\$10$ and $c_5=\$100$, paid at dates $t_1=i$ years for $i=1...5$
+
+- Most issued bonds fall into the category of **coupon bonds**, which are specified by a set of key parameters
+- The **face value** which can also be called the **par value** or**principal** or the **nominal value** of the bond and plays the role of the principal of the loan
+- The **maturity** of the bond is the date the contace terminates. At or about the maturity date, the face value is paid to the bond holder
+- Prior to maturity, the bond issuer makes interest payments to the bond holder
+- The **coupon rate** is the interest rate of the bond and is paid to the bond holder annually, with the coupon payments sometimes split into multiple payments over the course of a year
+- Of tcoupone bonds, one particular structure is by far the most prevalent, known as **vanilla bonds**, or **bullet bonds**
+- As this is the bond structure we will mostly be concerned with, we will establish the notation we will generally use for these bonds
+
+The face value of the bond will be denoted $F$. The annual coupon will be denoted $c$. The coupon rate is thus $c/F$
+
+If the payment frequency is $k$ then the cash flows are $c/k$ paid at reguarly spaced intervals $k$ times per year
+
+By far the most common payment frequencies are $k=1$ (annual) and $k=2$ (semiannual)
+
+**Example**: Suppose it is June 20, 2019. What are the payments and payment dates of a 7% coupon bond, making semiannual payments , with a face value of $100,000, and maturing in 5 years?
+
+The annual payments total
+**<p align="center">**
+$\text{annual coupon}=7\% \times \$100,000 = \$7000$
+</p>
+
+This payment is split into 2 semiannual coupon payments of 
+**<p align="center">**
+$\frac{7000}{2}=\$3500$
+</p>
+
+Assuming the bond matures on June 20, 2024, the following is the schedule of payments:
+| Date      | Payment |
+| :---        |    :----:   |
+| 12/20/2019      | $3500       |
+| 6/20/2020   | $3500       |
+| 12/20/2020   | $3500        |
+| 6/20/2021   | $3500        |
+| 12/20/2021   | $3500        |
+| 6/20/2022   | $3500        |
+| 12/20/2022   | $3500        |
+| 6/20/2023   | $3500        |
+| 12/20/20203   | $3500        |
+| 6/20/2024   | $3500+$100,000=$103,500        |
+
+- **Zero Coupon Bonds**: Technically, a zero, coupon bond can be considered a special case of a coupon bond: it is simply a coupon bond whih makes exactly one payment, on the maturity date
+- While this is mathematically correct, it violates the spirit of what we mean by a "coupon bond" so we consider it a distinct class of securities
+- Nevertheless zero coupon bonds are of fundamental importance in fixed income analysis, and are a building block for the entire subject
+- In fact, coupon bonds are, technically, portfolios of zero coupon bonds
+
+**Example**: Plot the payments of a zero coupon bond with a $10,000 face value and a maturity of 5 years
+
+The bond simply makes one payment of $10,000 in the 5th year after origination of the bond
+
+# Bond Pricing
+- Bonds's have other defining features besides the contactual deatils (maturity, face value, coupon) we have condifered so far
+- ONe of these is the bond's price. The price of a bond is the outcome of marktet activity, rather than being an intrinsic or contractual feature of the bond
+- But how does the marktet price a bond? What factors influence a market's assessment of the value of a bond?
+- As an asset, a bond is the right to receive a certain stream of payments at certain times over the life of the bond
+- So the market price of a bond is the market's assessment of the economic value of that stream of cash flows
+- Relating a stream of future payments to value right now is a fundamental concept in finance, the *time value of money*
+- This is the topic of the nextion session
+- We may still use the idea of bond price in a comparative way
+
+We note that the nominal value of a bod can be regrarded as the "quantity" of a particular bond
+For instance, a $20,000 nominal value of a bond entitles the bond holder to exactly 2 times the cash flos of $10,000 nominal value of a bond with the same characteristics (coupon rate and maturity)
+
+This suggests that the $20,000 bond's price should be exactly 2 times the $10,000 bond's price
+
+**Example**: Suppose a US treasury bond maturing in 2 years paying 8% coupons (semiannually) and with a face value of $30,000 is currently trading for $25,000. Comapre the payments of this bond with those of another 2 year treasury with 8% coupons and a $120,000 nominal value. What is the market value of the $120,000 treasury? What about for a $10,000 treasury?
+
+The $20,000 treasury pays an annual coupon of
+
+**<p align="center">**
+$\text{annual coupon}=0.08 \times \$30,000=\$2400$
+</p>
+
+which is split into 2 semiannual payments of $1200 each paid every 6 months
+
+The final payment at maturity adds the last coupon payment to the $30,000 face value
+
+Thus the payments are:
+ Date      | Payment |
+| :---        |    :----:   |
+| 6 months      | $1200       |
+| 1 year   | $1200       |
+| 18 months   | $1200        |
+| 2 years  | $31200        |
+
+The $120,000 treasury has a nominal value exactly 4 times that of the $30,000 treasury
+
+And since it also pays 8% coupons, its interest payments will also be 4 times those of the $30,000 treasury, as we may verify:
+
+**<p align="center">**
+$\text{payments}=\frac{0.08 \times \$120,000}{2}=\$4800$
+</p>
+which is 4 times the $1200 payments of the first bond
+It s payments are thus:
+
+ Date      | Payment |
+| :---        |    :----:   |
+| 6 months      | $4800       |
+| 1 year   | $4800       |
+| 18 months   | $4800        |
+| 2 years  | $124,800        |
+
+The above plot shows that all the payments for the $120,000 bond are in proportion (by a factor of 4) to those of the $30,000 bond
+
+Holding this bond is equivalent to holding a portfolio consisting of 4 units of the first bond
+
+Thus it is not surprising that the correct price of this bond is exactly 4 times the price of the Z$30,000 bond:
+
+**<p align="center">**
+$\text{price of \$120,000 bond}=4 \times \$25,000=\$100,000$
+</p>
+
+We note that, while this would be the correct answer according to financial principles, in practice, it might not be so simple
+
+There are, for instance, liquidity issues for the larger position which may make it difficult to sell the 4 times larger position for exactly 4 times the smaller one
+
+The $10,000 bond has exactly $1/3$ the nominal value of the original bond, so by similar reasoning, its payments will be $1/3$ those of that bond:
+
+ Date      | Payment |
+| :---        |    :----:   |
+| 6 months      | $400       |
+| 1 year   | $400       |
+| 18 months   | $400        |
+| 2 years  | $10,400        |
+
+And by similar reasoning its price will be $1/3$ that of the $30,000 bond:
+
+**<p align="center">**
+$\text{price of \$10,000 bond}=\frac{\$25,000}{3}=\$8333$
+</p>
+
+It is convention in many markets to quote bond prices per $100 nominal value
+That is, the price is quoted for a $100 nominal value on the given bond, and then it is scaled up for the bond with a different face value
+
+This effectively means that the bond's price is reported as a percentage of the nominal value
+
+When this convention is followed, the bond price is expressed as plain number with no dollar ($) sign
+
+**Example**: Suppose a bond's price (per $100 notional) is 83. What is the price of $15,000 nominal of this bond? What is the nominal value of this issue an investor owns if she invests $1,000,000
+
+Since a price of 83 is quoted for this issue, the price of eht given position will be
+
+**<p align="center">**
+$P=\frac{83}{100}\times \$15,000=\$12,450$
+</p>
+
+The price of a $100 nominal of this bond is $83, so if an invesor spends $1,000,000 worth of the bond, she buys
+
+**<p align="center">**
+$\frac{1,000,000}{83} \times \$100 = \$1,204,819$
+</p>
+
+**Remark**: In this course we eill not, by default, follow this convention. When we have a bond asset with a particular face value we will report (and calulcate) the price for the given nominal value, without normalizing it to $100. In those cases where we do chooose to follow this pricing convention, it will be made clear by quoting a price as a raw number rather than as a dollar value-in particular, there will be no dollar(\$) sign.
+
+For instance, if a bond price is reported as 95 (rather than 95), this implies that it is the price per $100 nominal value
